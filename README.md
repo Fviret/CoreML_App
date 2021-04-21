@@ -1,4 +1,4 @@
-# CoreML_App
+# Training day is a CoreML_App
 
 Training day est une application d entrainement. Le faceID est installé et est requis à chaque fois que l on démare l application que ce soit pour la première fois ou qu on la remette en route apres l avoir passée en background. L exercice le plus complexe a été la mise en place du FrameWork CoreML qui permet la détection d objet sur une image de maniere relativement précise.
 
