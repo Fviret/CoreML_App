@@ -13,3 +13,11 @@ frameworkd pris sur : https://developer.apple.com/machine-learning/models/
 <img src="https://user-images.githubusercontent.com/43244119/115250631-0e90c880-a12a-11eb-98d0-f06581d27194.png" width="250" />
 <b/>
   
+  
+# Rick and Morty is an APP build with an API
+
+La deuxieme app est une application d entrainement simple pour se familiariser avec les requetes API et le traitement des donnees JSON.
+L API a ete prise ici https://rickandmortyapi.com/documentation/#swift
+
+.
+<img src="https://user-images.githubusercontent.com/43244119/115580689-a0820800-a2c7-11eb-8ace-baacfabff9d3.png" width="250" />
