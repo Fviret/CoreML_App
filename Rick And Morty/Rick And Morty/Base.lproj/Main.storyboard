@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cRj-9o-Yac">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rick and Morty Character-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rick_And_Morty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M59-aG-Ygq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Ricky" rowHeight="134" id="9dx-fC-XAt" customClass="RickAndMortyCell" customModule="Rick_And_Morty" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="134"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9dx-fC-XAt" id="TVb-14-z2s">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gsT-pk-b2N">
+                                                    <rect key="frame" x="0.0" y="17" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="OcB-1t-tVs"/>
+                                                        <constraint firstAttribute="width" constant="100" id="fq8-yO-btQ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z78-P7-w0r">
+                                                    <rect key="frame" x="108" y="17" width="286" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="aNI-R2-6nS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy2-XI-7oi">
+                                                    <rect key="frame" x="108" y="57" width="286" height="60"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="z78-P7-w0r" firstAttribute="trailing" secondItem="TVb-14-z2s" secondAttribute="trailingMargin" id="CEB-hr-mcR"/>
+                                                <constraint firstItem="gsT-pk-b2N" firstAttribute="leading" secondItem="TVb-14-z2s" secondAttribute="leading" id="JoX-GH-S8Y"/>
+                                                <constraint firstItem="gsT-pk-b2N" firstAttribute="centerY" secondItem="TVb-14-z2s" secondAttribute="centerY" id="Qos-sH-HEV"/>
+                                                <constraint firstItem="Oy2-XI-7oi" firstAttribute="top" secondItem="z78-P7-w0r" secondAttribute="bottom" id="SYj-SL-4RU"/>
+                                                <constraint firstItem="Oy2-XI-7oi" firstAttribute="trailing" secondItem="z78-P7-w0r" secondAttribute="trailing" id="ZQ7-hs-By2"/>
+                                                <constraint firstItem="z78-P7-w0r" firstAttribute="top" secondItem="TVb-14-z2s" secondAttribute="topMargin" constant="6" id="fmd-dR-CCL"/>
+                                                <constraint firstItem="Oy2-XI-7oi" firstAttribute="leading" secondItem="z78-P7-w0r" secondAttribute="leading" id="gVa-Mp-Dkn"/>
+                                                <constraint firstItem="gsT-pk-b2N" firstAttribute="centerY" secondItem="TVb-14-z2s" secondAttribute="centerY" id="lLq-er-qkt"/>
+                                                <constraint firstItem="Oy2-XI-7oi" firstAttribute="bottom" secondItem="gsT-pk-b2N" secondAttribute="bottom" id="mU9-7a-5EG"/>
+                                                <constraint firstItem="z78-P7-w0r" firstAttribute="leading" secondItem="gsT-pk-b2N" secondAttribute="trailing" constant="8" symbolic="YES" id="pH0-ho-Peg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="DescriptionPerso" destination="Oy2-XI-7oi" id="NTc-l8-Bmb"/>
+                                            <outlet property="imagePerso" destination="gsT-pk-b2N" id="uLn-IW-V6H"/>
+                                            <outlet property="namePerso" destination="z78-P7-w0r" id="9P7-o0-0MY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M59-aG-Ygq" secondAttribute="trailing" id="IZB-dB-R1e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M59-aG-Ygq" secondAttribute="bottom" id="j03-Te-vf7"/>
+                            <constraint firstItem="M59-aG-Ygq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mAH-GY-wDD"/>
+                            <constraint firstItem="M59-aG-Ygq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mHi-DV-Xzh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rick and Morty Character" id="hKD-Ju-xFT"/>
+                    <connections>
+                        <outlet property="tableView" destination="M59-aG-Ygq" id="rHL-2G-Nmk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lzb-J6-JTH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cRj-9o-Yac" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zzp-0l-rhH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jeN-W3-dSg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gNl-ge-a0k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
